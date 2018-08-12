@@ -12,6 +12,8 @@ jobs:
 
     environment:
       BUILD_DIR: public
+      S3_BUCKET: s3://rowdyhowell.com/
+      CLOUDFRONT_DIST_ID: E1QWSZMHT1JFUW
 
     steps:
       - checkout
@@ -49,8 +51,8 @@ jobs:
           name: Deploy to AWS
           command: |
             if [ "${CIRCLE_BRANCH}" = "master" ]; then
-              aws s3 sync $BUILD_DIR \
-              s3://rowdyhowell.com/ --delete --acl "public-read"
+              aws s3 sync $BUILD_DIR $S3_BUCKET --delete --acl "public-read"
+              aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID --paths "/*"
             else
               echo "Not master branch, dry run only"
             fi
