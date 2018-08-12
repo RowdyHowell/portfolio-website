@@ -20,7 +20,7 @@ jobs:
           name: Install AWS CLI
           command: |
             sudo apt install python-pip python-dev
-            pip install awscli
+            sudo pip install awscli
 
       # # Download and cache dependencies
       # - restore_cache:
