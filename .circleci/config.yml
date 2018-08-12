@@ -30,7 +30,7 @@ jobs:
 
       - run:
           name: Install Gatsby CLI
-          command: yarn install -g gatsby-cli
+          command: yarn global add gatsby-cli
 
       - run:
           name: Install dependencies
