@@ -30,7 +30,7 @@ jobs:
 
       - run:
           name: Install Gatsby CLI
-          command: npm install -g gatsby-cli
+          command: sudo npm install -g gatsby-cli
 
       - run:
           name: Install dependencies
