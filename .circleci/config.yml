@@ -11,7 +11,7 @@ jobs:
     working_directory: ~/portfolio
 
     environment:
-      BUILD_DIR: ~/portfolio
+      BUILD_DIR: .
 
     steps:
       - checkout
