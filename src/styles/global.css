@@ -1,0 +1,14 @@
+:root {
+    --black1: #0B0C10;
+    --black2: #1F2833;
+    --gray: #C5C6C7;
+    --neon1: #66FCF1;
+    --neon2: #45A29E;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--black2);
+}
