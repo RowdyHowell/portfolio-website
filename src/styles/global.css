@@ -1,14 +1,16 @@
 :root {
-    --black1: #0B0C10;
-    --black2: #1F2833;
-    --gray: #C5C6C7;
-    --neon1: #66FCF1;
-    --neon2: #45A29E;
+  --tan: #EAE7D7;
+  --pale-red: #E98074;
+  --red: #E85A4F;
+  --dark-red: #4E0101;
+  --white: #F3F3F3;
+  --blue: #0D125A;
+  --pale-blue: #619DDE;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 html {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--black2);
+  background-color: var(--tan);
 }
