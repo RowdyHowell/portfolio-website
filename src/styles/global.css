@@ -4,6 +4,10 @@
     --gray: #C5C6C7;
     --neon1: #66FCF1;
     --neon2: #45A29E;
+
+    --pale-red: #E98074;
+    --red: #E85A4F;
+    --white: #F3F3F3;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
